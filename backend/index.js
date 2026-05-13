@@ -11,7 +11,7 @@ const port = process.env.PORT || 8080;
 
 // Middleware
 app.use(cors({
- origin: '*', // Saat development; ganti dengan URL App Engine setelah deploy frontend
+ origin: 'https://frontend-notes-dot-g-43-491016.as.r.appspot.com',
  methods: ['GET', 'POST', 'PUT', 'DELETE'],
  allowedHeaders: ['Content-Type']
 }))
