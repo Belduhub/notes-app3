@@ -1,0 +1,17 @@
+runtime: nodejs20 
+service: frontend-notes 
+
+handlers:
+  
+  - url: /assets
+    static_dir: dist/assets
+
+  
+  - url: /(.*\.(svg|png|ico))$
+    static_files: dist/\1
+    upload: dist/.*\.(svg|png|ico)$
+
+  
+  - url: /.*
+    static_files: dist/index.html
+    upload: dist/index.html
