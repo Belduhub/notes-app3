@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Notes - Praktikum Cloud Computing</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        
+        <!-- HEADER -->
+        <div class="header">
+            <h2>📝 Aplikasi Catatan Sederhana</h2>
+            <p>My Catatan Gwejh</p>
+        </div>
+
+        <!-- FORM CARD -->
+        <div class="form-card">
+            <form id="noteForm">
+                <input type="text" id="judul" placeholder="Judul catatan..." required>
+                <textarea id="isi" rows="3" placeholder="Tulis isi catatan..." required></textarea>
+                <button type="submit" id="submitBtn">Tambah</button>
+            </form>
+        </div>
+
+        <!-- LIST NOTES -->
+        <div class="notes-section">
+            <h3>Daftar Catatan</h3>
+            <div id="notesList"></div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
